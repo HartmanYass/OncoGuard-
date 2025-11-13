@@ -25,7 +25,7 @@ import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 
 @Composable
-fun TelaONGS(navController: NavController) {
+fun TelaMedico(navController: NavController) {
     Scaffold(
         bottomBar = { CustomBottomBar(navController = navController) },
         contentWindowInsets = WindowInsets.safeDrawing
@@ -36,7 +36,7 @@ fun TelaONGS(navController: NavController) {
                 .background(Color(0xFFFFFFFF))
                 .padding(paddingValues)
         ) {
-            Text("Tela ongs", color = Color.Magenta, fontSize = 35.sp)
+            Text("Tela MEDICOS", color = Color.Magenta, fontSize = 35.sp)
         }
     }
 }

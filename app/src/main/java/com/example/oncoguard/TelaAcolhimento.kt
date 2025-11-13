@@ -133,9 +133,8 @@ fun TelaAcolhimento(navController: NavController) {
                         Spacer(modifier = Modifier.height(24.dp))
 
                         // ✅ Botão dentro da tela
-                        // TELA DICA até fizer a tela de comunidade
                         Button(
-                            onClick = { navController.navigate("TelaDicas") },
+                            onClick = { navController.navigate("TelaComunidade") },
                             colors = ButtonDefaults.buttonColors(
                                 containerColor = Color(0xFFB60158),
                                 contentColor = Color.White

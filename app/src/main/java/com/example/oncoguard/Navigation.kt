@@ -22,7 +22,11 @@ sealed class Screen(val route: String) {
     object  TelaAcolhimento : Screen("TelaAcolhimento")
     object  TelaEsperanca : Screen("TelaEsperanca")
     object  TelaONGS : Screen("TelaONGS")
+    object  TelaMedico : Screen("TelaMedico")
+    object  TelaCalendario : Screen("TelaCalendario")
+    object  TelaComunidade : Screen("TelaComunidade")
 }
+
 
 @Composable
 fun AppNavigation(navController: NavHostController = rememberNavController()) {
@@ -72,6 +76,15 @@ fun AppNavigation(navController: NavHostController = rememberNavController()) {
         }
         composable (Screen.TelaONGS.route){
             TelaONGS(navController)
+        }
+        composable (Screen.TelaMedico.route){
+            TelaMedico(navController)
+        }
+        composable (Screen.TelaCalendario.route){
+            TelaCalendario(navController)
+        }
+        composable (Screen.TelaComunidade.route){
+            TelaComunidade(navController)
         }
 
     }
